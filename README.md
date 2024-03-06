@@ -1,9 +1,9 @@
 # EXPERIMENT-NO--03-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resistor
 
-# DATE :
-# NAME :
-# ROLLNUMBER :
-# DEPARTMENT
+# DATE :01/03/2024
+# NAME :HASNA MUBARAK AZEEM
+# ROLLNUMBER :212223240052
+# DEPARTMENT AIML
 ## AIM: 
 To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
  
@@ -62,6 +62,11 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### FIGURE-03 CIRCUIT DIAGRAM
+LOGIC DIAGRAM:
+![Screenshot 2024-03-06 105248](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/135305537/60e5a1b5-a2b7-432a-959f-ddb1dedabb92)
+
+SCHEMATIC DIAGRAM:
+![Screenshot 2024-03-06 105656](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/135305537/4cc9dec8-d130-4760-a0c9-2f19ab79f6d8)
 
 
 
@@ -82,7 +87,40 @@ The easiest way to measure a resistive sensor is to connect one end to power and
  *your roll no 
  * your name 
  * department and year 
- 
+ ```
+int LED=7;
+int FSR;
+void setup()
+{
+  pinMode(LED, OUTPUT);
+  Serial.begin(9600);
+}
+void loop()
+{
+  FSR =analogRead(A0);
+  Serial.print("Raw value+");
+  Serial.println(FSR);
+  delay(500);
+  int m;
+  m=map(FSR,0,159,0,10);
+  Serial.println("Mapped value=");
+  Serial.println(m);
+  if (FSR>50)
+  {
+    digitalWrite(LED,LOW);
+    delay(500);
+    digitalWrite(LED,HIGH);
+    delay(500);
+    
+}
+}
+```
+TABLE:
+![Screenshot 2024-03-01 161423](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/135305537/ace70b8e-7ed8-467b-a1e5-911054414854)
+
+CHART:
+![Screenshot 2024-03-01 161359](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/135305537/7e4d4cfa-aef9-4841-9a14-f6f3412bc5e4)
+
  
  
  
@@ -98,7 +136,7 @@ The easiest way to measure a resistive sensor is to connect one end to power and
  
  
 
-![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
+
 
 
 ### TABLE -02 standard deviation table 
