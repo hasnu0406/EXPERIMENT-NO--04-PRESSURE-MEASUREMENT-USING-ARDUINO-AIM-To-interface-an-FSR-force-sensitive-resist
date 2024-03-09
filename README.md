@@ -1,4 +1,7 @@
 # EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resistor
+NAME: HASNA MUBARAKAZEEM
+DEPARTMENT:AI & ML
+ROLL NO 212223240052
 
 
 ## AIM: 
@@ -76,57 +79,32 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
-
+![Screenshot 2024-03-09 084904](https://github.com/hasnu0406/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/135305537/93413cca-0afc-4ed4-99d1-b8e61f1a67b2)
 
 ### TABLE -02 standard deviation table 
 ### Population Standard Deviation
 The population standard deviation, the standard definition of σ, is used when an entire population can be measured, and is the square root of the variance of a given data set. In cases where every member of a population can be sampled, the following equation can be used to find the standard deviation of the entire population:
 
 
+OUTPUT:
 
-Where
-xi is an individual value
-μ is the mean/expected value
-N is the total number of values
+FIGURE 01:
 
-For those unfamiliar with summation notation, the equation above may seem daunting, but when addressed through its individual components, this summation is not particularly complicated. The i=1 in the summation indicates the starting index, i.e. for the data set 1, 3, 4, 7, 8, i=1 would be 1, i=2 would be 3, and so on. Hence the summation notation simply means to perform the operation of (xi - μ)2 on each value through N, which in this case is 5 since there are 5 values in this data set.
+LED ON:
 
-EX:           μ = (1+3+4+7+8) / 5 = 4.6        
-σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
-σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
+![Screenshot 2024-03-09 085040](https://github.com/hasnu0406/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/135305537/0c0599b6-e207-479c-9952-c5fb288b7ffa)
 
+LED OFF:
 
+![Screenshot 2024-03-09 085127](https://github.com/hasnu0406/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/135305537/91b994bb-1ee5-470b-96b6-a16c1895b3b0)
 
+TABULATED VIEW:
 
+![Screenshot 2024-03-09 085222](https://github.com/hasnu0406/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/135305537/72e3156b-f5f8-41ec-b350-b932ed365854)
 
+GRAPH
 
-
-
-
-
-
-
-
+![Screenshot 2024-03-09 085307](https://github.com/hasnu0406/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/135305537/d5687448-b979-486c-a964-5d27cefdb53b)
 
 
 ### RESULTS : Arduino uno is interfaced with FSR and output values are indicated on a graph.
